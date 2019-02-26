@@ -5,13 +5,13 @@ const items = [
   {
     src: './images/children.jpg',
     altText: 'Happy Kids',
-    caption: 'Little Timmy and Sandy realised they can access to porn.',
+    caption: 'Be excited just like Little Timmy and Sandy',
     header: 'Happy Kids'
   },
   {
     src: './images/video-controller.jpg',
     altText: 'Be a game changer!',
-    caption: 'Grab me hard, BITCH! Do it hard! That is the way I like it!',
+    caption: 'Release your inner gamer.',
     header: 'Be a game changer!'
   },
 ];

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Collapse,
     Navbar,
@@ -28,19 +29,16 @@ class Navigation extends Component {
         return (
             <div>
                 <Navbar color="faded" light>
-                    <NavbarBrand href="/" className="mr-auto">Play Pal</NavbarBrand>
+                    <NavbarBrand tag={Link} exact to="/" className="mr-auto">Play Pal</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
 
                     <Collapse isOpen={!this.state.collapsed} navbar>
                         <Nav navbar>
                             <NavItem>
-                                <NavLink>About</NavLink>
+                                <NavLink tag={Link} to="/About">About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>Generator</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink>Contact</NavLink>
+                                <NavLink tag={Link} to="/Contact">Contact</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

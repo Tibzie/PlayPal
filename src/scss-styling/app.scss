@@ -1,0 +1,35 @@
+@import "variables";
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    background-color: blue;
+}
+img {
+    width: 100%;
+}
+.horizontal-line {
+    margin-top: 50px;
+    width: 30%;
+    border: 2px solid $light-gray;
+}
+.page-banner {
+    height: 500px;
+    // background-image: url("feedback.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-header {
+    margin: 50px 25px; // top bottom: 50px, left, right: 25px
+}
+
+table {
+    td {
+        padding: 5px;
+    }
+    th {
+        padding: 5px;
+    }
+}

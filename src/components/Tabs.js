@@ -15,7 +15,7 @@ class Tabs extends Component {
         return (
             <div>
                 <Row>
-                    <Col lg="6" md="6" sm="6" xs="6">
+                    <Col lg="6">
                         <Card>
                             <CardImg top src="./images/children.jpg" />
                             <CardBody>
@@ -26,7 +26,7 @@ class Tabs extends Component {
                         </Card>
                     </Col>
 
-                    <Col lg="6" md="6" sm="6" xs="6">
+                    <Col lg="6">
                         <Card>
                             <CardImg top src="./images/video-controller.jpg" />
                             <CardBody>

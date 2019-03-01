@@ -10,32 +10,36 @@ import {
     NavLink
 } from 'reactstrap';
 
+
 class Navigation extends Component {
     constructor(props) {
         super(props);
         
-        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.toggle = this.toggle.bind(this);
         this.state = {
-            collapsed: true
+            isOpen: false
         };
     }
 
-    toggleNavbar() {
+    toggle() {
         this.setState({
-            collapsed: !this.state.collapsed
+            isOpen: !this.state.isOpen
         });
     }
     render() {
         return (
             <div>
-                <Navbar color="faded" light>
-                    <NavbarBrand tag={Link} exact to="/" className="mr-auto">Play Pal</NavbarBrand>
-                    <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+                <Navbar color="faded" light expand="md"> 
+                    <NavbarBrand tag={Link} to="/">Play Pal</NavbarBrand>
+                    <NavbarToggler onClick={this.toggle} />
 
-                    <Collapse isOpen={!this.state.collapsed} navbar>
-                        <Nav navbar>
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <NavLink tag={Link} to="/About">About</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to="/Generator">Generator</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink tag={Link} to="/Contact">Contact</NavLink>

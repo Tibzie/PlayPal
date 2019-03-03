@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Something extends Component {
+class Serial extends Component {
   render() {
     return (
-      <div>
+      <div className="serial">
         { this.props.serialNumber }
       </div>
     )
   }
 }
 
-export default Something;
+export default Serial;

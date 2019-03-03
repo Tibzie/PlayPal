@@ -5,7 +5,7 @@ class ButtonComp extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.props.onClick}>Go</Button>
+        <Button onClick={this.props.onClick}>Generate</Button>
       </div>
     )
   }

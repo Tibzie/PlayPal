@@ -29,7 +29,7 @@ class Navigation extends Component {
     render() {
         return (
             <div>
-                <Navbar color="faded" light expand="md"> 
+                <Navbar color="dark" dark expand="md"> 
                     <NavbarBrand tag={Link} to="/">Play Pal</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
 

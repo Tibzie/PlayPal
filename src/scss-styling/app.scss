@@ -1,10 +1,9 @@
 @import "variables";
+@import "nav";
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.navbar {
-    background-color: blue;
-}
+
 img {
     width: 100%;
 }
@@ -22,14 +21,83 @@ img {
     background-size: cover;
 }
 .page-header {
-    margin: 50px 25px; // top bottom: 50px, left, right: 25px
+    margin: 5rem 1.5rem; // top bottom: 50px, left, right: 25px
+    font-size: 5rem !important;
+}
+.subpage-header {
+    font-size: 4rem !important;
+    margin: 5rem 1.5rem 1rem 1.5rem;
+
+}
+ul {
+    margin-left: 5rem !important;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    cursor: pointer;
+}
+p {
+    margin: 0 1.5rem !important;
 }
 
 table {
+    margin-top: 2rem;
     td {
-        padding: 5px;
+        padding: 1.5rem;
     }
     th {
-        padding: 5px;
+        padding: 1.5rem;
     }
+}
+.generator {
+    width: 100% !important;
+    .btn {
+        background: transparent !important;
+        display: block;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem 3rem;
+        color: #333;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 3px solid #333;
+        &:hover {
+            background: #00BC6C !important; 
+            border: 3px solid #00BC6C;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+        }
+    }
+}
+.tabs {
+    margin-top: 5rem;
+    .card-title {
+        margin-left: 1.5rem;
+    }
+    .btn {
+        background: transparent !important;
+        float: right;
+        padding: 1rem 1.5rem;
+        color: #333;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 3px solid #333;
+        &:hover {
+            background: #333 !important;
+            border: 3px solid #333;
+        }
+    }
+}
+.serial {
+    text-align: center;
+}
+footer {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 1.6rem;
 }

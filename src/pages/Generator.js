@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ButtonComp from '../components/ButtonComp';
-import Something from '../components/Something';
+import Something from '../components/Serial';
 
 import {
   Row,
@@ -34,7 +34,7 @@ class Generator extends Component {
     const block4 = randStr.slice(12, 16);
     return `${block1}-${block2}-${block3}-${block4}`;
   }
-  handleClick(e) { 
+  handleClick(e) {
     e.preventDefault();
     this.setState({
       serialNumber: this.generateSerial()
@@ -42,18 +42,25 @@ class Generator extends Component {
   }
   render() {
     return (
-      <div>
-        <div className="page-image">
-          <img src="./images/random-generator.jpg" alt="random serial number generator" />
-        </div>
-     
-        
-        <h1>Generator</h1>
-        <p>This is going to be the serial number generator.</p>
-        <ButtonComp onClick={this.handleClick}/>
-    
-        <Something serialNumber={this.state.serialNumber} />
-      </div>
+      <section className="generator">
+        <img className="page-banner" src="./images/random-generator.jpg" alt="let's roll" />
+        <hr className="horizontal-line" />
+
+        <Row>
+          <Col sm={{ size: 8, offset: 2 }}>
+            <h1 className="page-header">Generator</h1>
+            <p>
+              This page generates a random serial number.<br />
+              This serial can be used on any games.<br />
+              (Nah, it's just for people who wanna test out the feature).<br />
+              Click on "go" button to get your free, random serial number.
+            </p>
+            <ButtonComp onClick={this.handleClick} />
+
+            <Something serialNumber={this.state.serialNumber} />
+          </Col>
+        </Row>
+      </section>
     )
   }
 }

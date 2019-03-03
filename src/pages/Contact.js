@@ -9,9 +9,12 @@ class Contact extends Component {
         <hr className="horizontal-line" />
 
         <Row>
-          <Col sm={{ size: 10, offset: 2 }}>
+          <Col sm={{ size: 8, offset: 2 }}>
             <h1 className="page-header">Contact us</h1>
-            <h3>Have you got any questions?</h3>
+            <p>
+              Have you got any questions?<br />
+              Feel free to message us and we will reply asap.
+            </p>
             <table border="0">
               <tr>
                 <th>Telephone number:</th>

@@ -13,7 +13,7 @@ import {
 class Tabs extends Component {
     render() {
         return (
-            <div>
+            <section className="tabs">
                 <Row>
                     <Col lg="6">
                         <Card>
@@ -37,7 +37,7 @@ class Tabs extends Component {
                         </Card>
                     </Col>
                 </Row>
-            </div>
+            </section>
         )
     }
 }
